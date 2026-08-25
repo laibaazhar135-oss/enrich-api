@@ -13,13 +13,13 @@ export const enrichinputchema= z.object({
 });
 
 export const enrichoutputschema= z.object({
-    category: z.enum(['fiction','non-fiction','poetry','children','horror','other']),
+    category: z.enum(['fiction','non-fiction','poetry','children','other']),
     summary: z.string()
     .min(1,'summary must not be empty'),
-    quality_flags:z.array(z.enum(['vague-description','too short','missing details','looks-fine']))
+    quality_flags:z.array(z.enum(['vague_description','too_short','missing_details','looks_fine']))
     .min(1,'quality_flags must contain atleast one flag'),
     confidence: z.number()
-    .min(0)
+    .min(0)            
     .max(1)
 })
 

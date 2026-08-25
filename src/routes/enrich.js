@@ -1,6 +1,7 @@
 import { Router } from "express";
 import { enrichinputchema,enrichoutputschema } from "../llm/schema.js";
 import {enrichBook} from '../llm/client.js';
+import { enrichandvalidate } from "../llm/parse-repair.js";
 
 const router = Router();
 
@@ -38,9 +39,15 @@ router.post('/enrich',async(req,res)=>{
 try{
     const responce= await enrichBook(title,description);
 
-    res.status(200).json({
-        raw_responce: responce
-    });
+    const enrichResult= await enrichandvalidate(title,description,responce);
+
+    if(!enrichResult.success){
+       return res.status(enrichResult.statuscode).json({
+            error: enrichResult.error
+        })
+    }
+
+    res.status(200).json(enrichResult.data);
 }
 catch(error){
     res.status(500).json({

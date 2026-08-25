@@ -15,7 +15,7 @@ const client = new OpenAI({
 const promptpath= path.join(__dirname,'../prompts/enrich-v1.md');
 const systemPrompt = fs.readFileSync(promptpath,'utf-8');
 
-export async function enrichBook(title,description) {
+export async function enrichBook(title,description,customPrompt=null) {
     const usermessage= JSON.stringify({
         title,
         description
@@ -24,7 +24,7 @@ export async function enrichBook(title,description) {
            const responce = await client.chat.completions.create({
             model: process.env.LLM_MODEL,
             messages:[
-                {role:'system',content:systemPrompt},
+                {role:'system',content:customPrompt || systemPrompt},
                 {role:'user',content:usermessage}
             ],
             temperature:0.2,
