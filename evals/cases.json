@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "title": "The Great Gatsby",
+    "description": "A tragic story of wealth, love, and the American Dream in 1920s New York.",
+    "expected_category": "fiction",
+    "reason": "Clearly a novel"
+  },
+  {
+    "id": 2,
+    "title": "Sapiens: A Brief History of Humankind",
+    "description": "An exploration of how Homo sapiens came to dominate the world through cognitive revolution, agriculture, and science.",
+    "expected_category": "non-fiction",
+    "reason": "Educational, historical analysis"
+  },
+  {
+    "id": 3,
+    "title": "Where the Wild Things Are",
+    "description": "A young boy sails away to an island inhabited by wild creatures and becomes their king.",
+    "expected_category": "children",
+    "reason": "Classic children's picture book story"
+  },
+  {
+    "id": 4,
+    "title": "The Road",
+    "description": "A father and son journey through a post-apocalyptic wasteland in search of survival.",
+    "expected_category": "fiction",
+    "reason": "Dystopian novel despite dark themes"
+  },
+  {
+    "id": 5,
+    "title": "Howl and Other Poems",
+    "description": "A collection of powerful, experimental poems exploring identity, society, and the human condition.",
+    "expected_category": "poetry",
+    "reason": "Explicitly described as poetry collection"
+  },
+  {
+    "id": 6,
+    "title": "Untitled Manuscript",
+    "description": null,
+    "expected_category": "other",
+    "reason": "No description - should trigger 'when unsure' rule, confidence < 0.5"
+  },
+  {
+    "id": 7,
+    "title": "The Lean Startup",
+    "description": "How modern entrepreneurs build successful businesses by testing assumptions, iterating rapidly, and focusing on validated learning.",
+    "expected_category": "non-fiction",
+    "reason": "Business methodology book"
+  },
+  {
+    "id": 8,
+    "title": "Ambiguous Text About Things",
+    "description": "A mysterious story with unclear meaning and unusual characters doing vague things.",
+    "expected_category": "other",
+    "reason": "Deliberately vague - should fail to match clear category, fall back to 'other'"
+  }
+]

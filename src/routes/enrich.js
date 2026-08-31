@@ -71,7 +71,7 @@ catch(error){
     }
     if(error.status===401){
         console.error(`Authentication failed(likely bad api): `,error.message);
-        return res.status(500).json({
+        return res.status(401).json({
             error: `LLM authentication failed`,
             details:`Check that LLM api key is configured correctly`
         })

@@ -1,0 +1,73 @@
+{
+  "date": "2026-08-31T17:44:49.004Z",
+  "prompt_version": "v1",
+  "model_name": "llama3.2",
+  "score": "0/8",
+  "percentage": "0",
+  "cases": [
+    {
+      "id": 1,
+      "title": "The Great Gatsby",
+      "error": "HTTP 500",
+      "passed": false,
+      "expected": "fiction",
+      "actual": null
+    },
+    {
+      "id": 2,
+      "title": "Sapiens: A Brief History of Humankind",
+      "error": "HTTP 500",
+      "passed": false,
+      "expected": "non-fiction",
+      "actual": null
+    },
+    {
+      "id": 3,
+      "title": "Where the Wild Things Are",
+      "error": "HTTP 500",
+      "passed": false,
+      "expected": "children",
+      "actual": null
+    },
+    {
+      "id": 4,
+      "title": "The Road",
+      "error": "HTTP 500",
+      "passed": false,
+      "expected": "fiction",
+      "actual": null
+    },
+    {
+      "id": 5,
+      "title": "Howl and Other Poems",
+      "error": "HTTP 500",
+      "passed": false,
+      "expected": "poetry",
+      "actual": null
+    },
+    {
+      "id": 6,
+      "title": "Untitled Manuscript",
+      "error": "HTTP 500",
+      "passed": false,
+      "expected": "other",
+      "actual": null
+    },
+    {
+      "id": 7,
+      "title": "The Lean Startup",
+      "error": "HTTP 500",
+      "passed": false,
+      "expected": "non-fiction",
+      "actual": null
+    },
+    {
+      "id": 8,
+      "title": "Ambiguous Text About Things",
+      "error": "HTTP 500",
+      "passed": false,
+      "expected": "other",
+      "actual": null
+    }
+  ]
+}
