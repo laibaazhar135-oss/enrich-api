@@ -1,54 +1,59 @@
 {
-  "date": "2026-08-31T17:44:49.004Z",
+  "date": "2026-09-01T06:17:20.781Z",
   "prompt_version": "v1",
-  "model_name": "llama3.2",
-  "score": "0/8",
-  "percentage": "0",
+  "model_name": "openrouter/free",
+  "score": "6/8",
+  "percentage": "75",
   "cases": [
     {
       "id": 1,
       "title": "The Great Gatsby",
-      "error": "HTTP 500",
-      "passed": false,
+      "passed": true,
       "expected": "fiction",
-      "actual": null
+      "actual": "fiction",
+      "confidence": 0.95,
+      "reason": "Clearly a novel"
     },
     {
       "id": 2,
       "title": "Sapiens: A Brief History of Humankind",
-      "error": "HTTP 500",
-      "passed": false,
+      "passed": true,
       "expected": "non-fiction",
-      "actual": null
+      "actual": "non-fiction",
+      "confidence": 0.95,
+      "reason": "Educational, historical analysis"
     },
     {
       "id": 3,
       "title": "Where the Wild Things Are",
-      "error": "HTTP 500",
-      "passed": false,
+      "passed": true,
       "expected": "children",
-      "actual": null
+      "actual": "children",
+      "confidence": 0.95,
+      "reason": "Classic children's picture book story"
     },
     {
       "id": 4,
       "title": "The Road",
-      "error": "HTTP 500",
-      "passed": false,
+      "passed": true,
       "expected": "fiction",
-      "actual": null
+      "actual": "fiction",
+      "confidence": 0.95,
+      "reason": "Dystopian novel despite dark themes"
     },
     {
       "id": 5,
       "title": "Howl and Other Poems",
-      "error": "HTTP 500",
-      "passed": false,
+      "passed": true,
       "expected": "poetry",
-      "actual": null
+      "actual": "poetry",
+      "confidence": 0.9,
+      "reason": "Explicitly described as poetry collection"
     },
     {
       "id": 6,
       "title": "Untitled Manuscript",
-      "error": "HTTP 500",
+      "error": "HTTP 422",
       "passed": false,
       "expected": "other",
       "actual": null
@@ -56,18 +61,20 @@
     {
       "id": 7,
       "title": "The Lean Startup",
-      "error": "HTTP 500",
-      "passed": false,
+      "passed": true,
       "expected": "non-fiction",
-      "actual": null
+      "actual": "non-fiction",
+      "confidence": 0.95,
+      "reason": "Business methodology book"
     },
     {
       "id": 8,
       "title": "Ambiguous Text About Things",
-      "error": "HTTP 500",
       "passed": false,
       "expected": "other",
-      "actual": null
+      "actual": "fiction",
+      "confidence": 0.55,
+      "reason": "Deliberately vague - should fail to match clear category, fall back to 'other'"
     }
   ]
 }

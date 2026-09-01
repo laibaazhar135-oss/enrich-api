@@ -79,7 +79,7 @@ export async function enrichBook(title,description,customPrompt=null) {
         }
 
         const waitms= exponentialbackoffwithjitter(attemptNumber);
-        console.log(`Attempt ${attemptNumber}/${MAX_RETRIES_ATTEMPT} failed , retrying again after ${waitms} seconds`);
+        console.log(`Attempt ${attemptNumber}/${MAX_RETRIES_ATTEMPT} failed , retrying again after ${Math.round(waitms)} ms`);
         await sleep(waitms);
     }
 }

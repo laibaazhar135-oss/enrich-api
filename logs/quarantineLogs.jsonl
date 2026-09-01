@@ -1,3 +1,6 @@
 {"Timestamp":"2026-08-25T13:21:20.715Z","book_title":"The Great Gatsby","book_description":"A tragic story of wealth, love, and the American Dream in 1920s New York.","validation_error":"Repare validation failed","prompt_version":"v1","attempt_version":1}
 {"Timestamp":"2026-08-25T13:26:21.277Z","book_title":"Clean Code","book_description":null,"validation_error":"Repare validation failed","prompt_version":"v1","attempt_version":1}
 {"Timestamp":"2026-08-25T13:32:34.796Z","book_title":"Clean Code","book_description":null,"validation_error":"Repare validation failed","prompt_version":"v1","attempt_version":1}
+{"Timestamp":"2026-08-31T19:09:43.625Z","book_title":"Untitled Manuscript","book_description":null,"validation_error":"Repaired attempt returned unparsable JSON","prompt_version":"v1","attempt_version":1}
+{"Timestamp":"2026-09-01T06:05:09.761Z","book_title":"Untitled Manuscript","book_description":null,"validation_error":"Repaired attempt returned unparsable JSON","prompt_version":"v1","attempt_version":1}
+{"Timestamp":"2026-09-01T06:17:07.440Z","book_title":"Untitled Manuscript","book_description":null,"validation_error":"Repare validation failed","prompt_version":"v1","attempt_version":1}
